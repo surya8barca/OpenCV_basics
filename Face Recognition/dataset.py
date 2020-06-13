@@ -8,7 +8,7 @@ frames=1;
 count=0;
 face_cascade=cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml');
 
-face_id=input('Enter Name of Person:' )
+face_id=input('Enter Id of Person:' )
 
 
 
@@ -26,7 +26,7 @@ while True:
         cv2.imwrite("Dataset/User."+str(face_id)+'.'+str(count)+'.jpg',gray[y:y+h,x:x+w])
         cv2.imshow('Capturing',frame)
 
-    if cv2.waitKey(1)==27 or count==100:
+    if(cv2.waitKey(1)==27 or count==100) :
         break
 
     

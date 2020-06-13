@@ -9,7 +9,7 @@ faceCascade=cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalfa
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 id=0;
-names=['Unknown','Surya','Shipra']
+names=['Unknown','Surya','Shipra','Simpi','Papa','Mummy']
 
 cam = cv2.VideoCapture(0)
 cam.set(3, 640) 
